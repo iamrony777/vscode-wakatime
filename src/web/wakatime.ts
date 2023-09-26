@@ -263,7 +263,6 @@ export class WakaTime {
   }
 
   public openDashboardWebsite(): void {
-    this.logger.debug(this.config.keys().toString())
     let url = 'https://wakatime.com/';
     vscode.window.showInformationMessage(this.config.keys().toString())
     vscode.env.openExternal(vscode.Uri.parse(url));
